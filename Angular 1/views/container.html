@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../css/custom.css"/>
+<button ng-click="crudCtrl.addRows()" class="btn btn-primary">Add 1000 items</button>
+<button ng-click="crudCtrl.removeRows()" class="btn btn-primary">Remove 1000 items</button>
+<button ng-click="crudCtrl.clearRows()" class="btn btn-primary">Clear all items</button>
+<button ng-click="crudCtrl.updateRows()" class="btn btn-primary">Update all items once</button>
+<button ng-click="crudCtrl.activateFeedSlow()" class="btn btn-primary">Slow feed</button>
+<button ng-click="crudCtrl.activateFeedFast()" class="btn btn-primary">Fast feed</button>
+<button ng-click="crudCtrl.activateFeedSuperMode()" class="btn btn-primary">Extreme feed</button>
+<button ng-click="crudCtrl.activateSoloFeed()" class="btn btn-primary">Single change</button>
+<button ng-click="crudCtrl.stopFeed()" class="btn btn-primary">Stop current feed</button>
+<div style="float:right">Number of items: {{crudCtrl.items.length}}</div>
+</br>
+<div class="row">
+    <div ng-repeat="item in crudCtrl.items track by $index" class="col-md-1" ng-class="{'red': item < 4, 'green': item > 6, 'orange': item < 7 && item > 3}">
+        <div>
+            {{item}}
+        </div>
+    </div>
+</div>

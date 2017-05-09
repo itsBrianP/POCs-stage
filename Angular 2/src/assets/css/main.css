@@ -1,0 +1,169 @@
+.contact-image {
+  border:1px solid darkgrey;
+  border-radius: 3px;
+  padding:2px;
+  max-height: 150px !important;
+  min-height:150px !important;
+}
+.contact-image:hover {
+
+  animation-name: scale-image;
+  animation-duration: 0.5s;
+  -webkit-animation : scale-image 0.5s;
+}
+
+@-webkit-keyframes scale-image {
+
+  0% {
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+
+  }
+  30% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  80% {
+    border:5px solid mediumpurple;
+    border-radius: 4px;
+  }
+
+}
+
+@keyframes scale-image {
+
+  0% {
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+
+  }
+  30% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  80% {
+    border:5px solid mediumpurple;
+    border-radius: 4px;
+  }
+
+}
+
+.media-heading {
+  width:100%;
+}
+
+.media-body {
+  width:100%;
+}
+
+.media .thumbnail {
+  float: none !important;
+  width:100%;
+  border:0px;
+}
+li.contacts {
+  text-align: center;
+}
+
+.media-object {
+  width: 128px;
+  height: 128px;
+  border-radius: 5px;
+}
+
+.media .thumbnail {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.media-list {
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .media-list {
+    text-align: left;
+  }
+
+  .media .thumbnail {
+    float: left;
+    margin-right: 25px;
+  }
+}
+
+.media:first-child {
+  margin-top: 15px;
+}
+
+.media {
+  margin-top: 0 !important;
+}
+
+.btn-outline {
+  color: #563d7c;
+  background-color: transparent;
+  border-color: #563d7c;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+a {
+  color: #563d7c;
+}
+
+a:hover,
+a:focus {
+  color: #1d1429;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #563d7c;
+}
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+
+/* Add animation */
+.my-repeat-animation.ng-enter.ng-enter-active,
+.my-repeat-animation.ng-leave {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear;
+  -moz-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+/* Remove animation */
+.my-repeat-animation.ng-leave.ng-leave-active,
+.my-repeat-animation.ng-enter {
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  -moz-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.smallpad {
+  margin-top: 5px;
+}
+
+.searched {
+  background-color: black;
+  color: white;
+}
